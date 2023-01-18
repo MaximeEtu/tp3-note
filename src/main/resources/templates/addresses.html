@@ -9,7 +9,7 @@
 <div th:replace="fragments/navbar :: navbar"></div>
 <h1>Les differentes adresses</h1>
 <ul th:each="address:${allAddresses}">
-    <li th:text="${address.content} + ' : ' + ${address.author}" />
+    <li th:text="${address.author} + ' : ' + ${address.content}" />
 </ul>
 </body>
 </html>
