@@ -2,23 +2,15 @@ package com.ensimTP3.ensim.model;
 
 public class Forecast {
 
-    private double weather;
     private double tmin;
     private double tmax;
+    private String datetime;
 
     public Forecast() {}
-    public Forecast(double weather, double tmin, double tmax) {
-        this.weather = weather;
+    public Forecast(double tmin, double tmax, String datetime) {
         this.tmin = tmin;
         this.tmax = tmax;
-    }
-
-    public double getWeather() {
-        return weather;
-    }
-
-    public void setWeather(double weather) {
-        this.weather = weather;
+        this.datetime = datetime;
     }
 
     public double getTmin() {
@@ -35,5 +27,13 @@ public class Forecast {
 
     public void setTmax(double tmax) {
         this.tmax = tmax;
+    }
+
+    public String getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(String datetime) {
+        this.datetime = datetime;
     }
 }

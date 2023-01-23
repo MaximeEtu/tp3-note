@@ -8,7 +8,12 @@
 <body>
 <div th:replace="fragments/navbar :: navbar"></div>
 
-  <p th:text="'LA METEO ' + ${name} + ' !'" />
+    <h1 th:text=" 'La meteo de : ' + ${name}"></h1>
+
+    <ul th:each="item : ${items}">
+
+            <li th:text="${'[' + item.getDatetime() + '] entre ' + item.getTmin() + '°C et ' + item.getTmax() + '°C'}"></li>
+    </ul>
 
 </body>
 </html>

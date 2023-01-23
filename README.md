@@ -45,3 +45,15 @@
 
 <p>J'ai importé le CDN (content delivery network) de Bootstrap dans chaque fichier html. Ainsi les classes css sont automatiquement chargées au lancement des pages</p>
 
+<hr> 
+
+# Question étape 6 (TP4) :
+<p>Oui, il faut se créer un compte pour en générer une</p>
+<p>Pour avoir les prévisions météo d'un endroit en entrant latitude et longitude avec son token : [https://api.meteo-concept.com/api/forecast/daily?token="+ token + "&latitude="+latitude+"&longitude="+longitude]</p>
+<p>La méthode HTTP GET</p>
+<p>En utilisant la concaténation des chaînes de caractères comme ci-dessus</p>
+<p>Les données météo relatives à chaque jour se trouve dans le tableau "forecast", pour la température de chaque jour on va avoir "tmin" pour la température minimale et "tmax" pour la température maximale. </p>
+<p>La prévision est donnée par la clé "weather"</p>
+
+
+#### Projet GitHub : https://github.com/MaximeEtu/tp3-note
